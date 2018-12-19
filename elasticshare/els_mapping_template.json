@@ -1,0 +1,323 @@
+{
+  "template" : "els*",
+  "version" : 50001,
+  "settings" : {
+    "index.refresh_interval" : "5s"
+  },
+  "mappings" : {
+    "_default_" : {
+        "properties" : {
+          "CacheCacheStatus" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "CacheResponseBytes" : {
+            "type" : "long"
+          },
+          "CacheResponseStatus" : {
+            "type" : "integer"
+          },
+          "CacheTieredFill" : {
+            "type" : "boolean"
+          },
+          "ClientASN" : {
+            "type" : "long"
+          },
+          "ClientCountry" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "ClientDeviceType" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "ClientIP" : {
+            "type": "ip"
+          },
+          "ClientIPClass" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "ClientRequestBytes" : {
+            "type" : "long"
+          },
+          "ClientRequestHost" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "ClientRequestMethod" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "ClientRequestProtocol" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "ClientRequestReferer" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "ClientRequestURI" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "ClientRequestUserAgent" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "ClientSSLCipher" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "ClientSSLProtocol" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "ClientSrcPort" : {
+            "type" : "integer"
+          },
+          "EdgeColoID" : {
+            "type" : "integer"
+          },
+          "EdgeEndTimestamp" : {
+            "type" : "long"
+          },
+          "EdgePathingOp" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "EdgePathingSrc" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "EdgePathingStatus" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "EdgeRequestHost" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "EdgeResponseBytes" : {
+            "type" : "long"
+          },
+          "EdgeResponseCompressionRatio" : {
+            "type" : "float"
+          },
+          "EdgeResponseContentType" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "EdgeResponseStatus" : {
+            "type" : "long"
+          },
+          "EdgeServerIP" : {
+            "type" : "ip"
+          },
+          "EdgeStartTimestamp" : {
+            "type" : "long"
+          },
+          "OriginIP" : {
+            "type" : "ip"
+          },
+          "OriginResponseBytes" : {
+            "type" : "long"
+          },
+          "OriginResponseHTTPExpires" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "OriginResponseHTTPLastModified" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "OriginResponseStatus" : {
+            "type" : "integer"
+          },
+          "OriginResponseTime" : {
+            "type" : "long"
+          },
+          "OriginSSLProtocol" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "RayID" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "SecurityLevel" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "WAFAction" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "WAFFlags" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "WAFMatchedVar" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "WAFProfile" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "WAFRuleID" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "WAFRuleMessage" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "ZoneID" : {
+            "type" : "long"
+          }
+        }
+      }
+    
+  }
+}
